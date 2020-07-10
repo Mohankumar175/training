@@ -1,0 +1,23 @@
+"""
+type Customer {
+	customerId: ID!
+	name: string
+	dob: string
+	mobileNo: long
+	emailId: string
+	gender: string
+}
+
+
+
+# Root
+type Query {
+	findAllCustomers: [Customer]!
+	
+}
+
+# Root
+type Mutation {
+	createAuthor(name: string, dob: string): Customer!
+}
+"""
